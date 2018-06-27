@@ -8,7 +8,12 @@ public class DuplicateEachString {
     public static void main(String[] args) {
 
         String [] input = {"a", "b","c"};
+        repeater1(input);
 
+
+    }
+
+    public static String repeater1 (String [] input){
         String [] output = new String [input.length*input.length];
 
         int counter = 0;
@@ -19,6 +24,8 @@ public class DuplicateEachString {
             }
         }
         System.out.println(Arrays.toString(output));
+        String result = new String (output.toString());
+        return result;
     }
 
 }
